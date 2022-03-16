@@ -75,7 +75,7 @@ func initRouter(basePath string) *web.Router {
 	router.Error(Error)
 
 	// add middlewares
-	router.Middleware(web.LoggerMiddleware)
+	router.Middleware(loggerMiddleware)
 	// router.Middleware(web.ShowErrorsMiddleware)
 
 	// handle routes
