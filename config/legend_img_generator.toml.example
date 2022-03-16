@@ -2,11 +2,11 @@
    
 [Server]
 # Accept connections on this subnet (default accepts on all)
-HttpHost = "0.0.0.0"
+#HttpHost = "0.0.0.0"
 
 # IP ports to listen on
-HttpPort = 7000
-# HttpsPort = 9001
+#HttpPort = 9000
+#HttpsPort = 9001
 
 # HTTPS configuration - TLS server certificate full chain and key
 # If these are not specified, the TLS server will not be started
@@ -16,13 +16,13 @@ HttpPort = 7000
 # Advertise URLs relative to this server name and path
 # The default is to look this up from incoming request headers
 # Note: do not add a trailing slash.
-#    UrlBase = "http://localhost:9000"
+#UrlBase = "http://localhost:9000"
 
 # String to return for Access-Control-Allow-Origin header
-#    CORSOrigins = "*"
+#CORSOrigins = "*"
 
 # set Debug to true to run in debug mode (can also be set on cmd-line)
-#    Debug = true
+#Debug = true
 
 # Maximum duration for reading entire request (in seconds)
 ReadTimeoutSec = 5
@@ -34,7 +34,6 @@ WriteTimeoutSec = 30
 [Metadata]
 # Title for this service
 #Title = "legend_img_generator"
-
 # Description of this service
 #Description = "Legend Image Generator"
 
