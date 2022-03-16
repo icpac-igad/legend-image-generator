@@ -2,6 +2,8 @@
 
 Generate a legend image for a map from a json configuration.
 
+This was developed to generate static legend images for some layers on [EAHW](https://eahazardswatch.icpac.net) as an alternative to generating directly with HTML.
+
 ## Sample Output
 
 Sample output
