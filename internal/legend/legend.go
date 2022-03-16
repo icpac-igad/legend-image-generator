@@ -66,7 +66,7 @@ func GetLegendImg(config LegendConfig) (image.Image, error) {
 
 		// if first one
 		if i == 0 {
-			// last one. Draw left triangle
+			// Draw left triangle
 			dc.MoveTo(0, float64(itemHeight)/2)
 			dc.LineTo(float64(xPosition)+float64(itemWidth), 0)
 			dc.LineTo(float64(xPosition)+float64(itemWidth), float64(itemHeight))
