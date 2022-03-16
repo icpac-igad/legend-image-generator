@@ -20,6 +20,8 @@ LABEL original_developer="ICPAC" \
 
 RUN apk --no-cache add ca-certificates && mkdir /app
 WORKDIR /app/
+
+COPY --from=builder /app/fonts /app/fonts
 COPY --from=builder /app/app_executable /app/
 
 VOLUME ["/config"]

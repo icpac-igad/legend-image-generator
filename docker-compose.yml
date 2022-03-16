@@ -6,6 +6,7 @@ services:
     container_name: legend_img_generator
     build: .
     restart: ${RESTART_POLICY}
+    command: -f /app/fonts/Fira_Sans/FiraSans-Regular.ttf
     volumes:
       - ./config:/config
     ports:
