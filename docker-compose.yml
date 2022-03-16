@@ -1,0 +1,12 @@
+version: '3.0'
+
+services:
+  legend_img_generator:
+    image: eahazardswatch.icpac.net/legend_img_generator
+    container_name: legend_img_generator
+    build: .
+    restart: ${RESTART_POLICY}
+    volumes:
+      - ./config:/config
+    ports:
+      - ${PORT}:9000
