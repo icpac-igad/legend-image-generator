@@ -8,7 +8,7 @@
 vendor/
 tmp/
 
-config.toml
+legend_img_generator.toml
 
 # IDE specific files
 .vscode

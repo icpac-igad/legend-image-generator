@@ -16,7 +16,6 @@ var Configuration Config
 func setDefaultConfig() {
 	viper.SetDefault("Server.HttpHost", "0.0.0.0")
 	viper.SetDefault("Server.HttpPort", 9000)
-	viper.SetDefault("Server.UrlBase", "")
 	viper.SetDefault("Server.BasePath", "")
 	viper.SetDefault("Server.CORSOrigins", "*")
 	viper.SetDefault("Server.Debug", false)
@@ -41,7 +40,6 @@ type Config struct {
 type Server struct {
 	HttpHost        string
 	HttpPort        int
-	UrlBase         string
 	BasePath        string
 	CORSOrigins     string
 	Debug           bool

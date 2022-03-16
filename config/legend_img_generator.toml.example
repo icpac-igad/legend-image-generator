@@ -13,10 +13,12 @@
 # TlsServerCertificateFile = ""
 # TlsServerPrivateKeyFile = ""
 
-# Advertise URLs relative to this server name and path
-# The default is to look this up from incoming request headers
-# Note: do not add a trailing slash.
-#UrlBase = "http://localhost:9000"
+# Optional path to add to the service base URL
+# If set, all routes will be prefixed with this path
+# (e.g. "/pg_featureserv", "/services/pg_featureserv", etc.)
+# Note: No trailing slash is necessary, pg_featureserv automatically
+# adds a trailing slash for you.
+#BasePath = "/"
 
 # String to return for Access-Control-Allow-Origin header
 #CORSOrigins = "*"
@@ -38,4 +40,4 @@ WriteTimeoutSec = 30
 #Description = "Legend Image Generator"
 
 [Legend]
-FontPath = "/app/fonts/Fira_Sans/FiraSans-Regular.ttf"
+# FontPath = "/app/fonts/Fira_Sans/FiraSans-Regular.ttf"

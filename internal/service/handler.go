@@ -69,7 +69,7 @@ func (c *Context) HandleGenerateLegend(rw web.ResponseWriter, req *web.Request) 
 
 func initRouter(basePath string) *web.Router {
 	// create router
-	router := web.New(Context{})
+	router := web.NewWithPrefix(Context{}, basePath)
 
 	// ovveride gocraft defualt error handler
 	router.Error(Error)
