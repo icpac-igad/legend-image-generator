@@ -54,6 +54,9 @@ type Metadata struct {
 
 type Legend struct {
 	FontPath string
+	FontSize int
+	Width    int
+	Height   int
 }
 
 // InitConfig initializes the configuration from the config file
